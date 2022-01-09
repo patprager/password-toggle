@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --border-color: #b0c4de;
+  --btn-background-color: #191970;
+  --background-color: #f0f8ff;
+  --font-color: #f0f8ff;
+}
+
+html {
+  background-color: var(--background-color);
+  font-family: "Poppins", sans-serif;
+  color: SteelBlue;
+}
+
+body {
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15rem;
+}
+
+.container-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(240, 248, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px #4683b44d;
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+  border: 1px solid rgba(240, 248, 255, 0.61);
+  height: 7rem;
+  width: 25rem;
+}
+
+#hide-show {
+  margin-left: 0.35rem;
+
+  height: 2rem;
+  width: 9rem;
+  border: var(--border-color) solid 0.1rem;
+  border-radius: 0.2rem;
+
+  background-color: var(--btn-background-color);
+  color: var(--font-color);
+}
+
+#password-input {
+  border: var(--border-color) solid 0.1rem;
+  border-radius: 0.2rem;
+  height: 2rem;
+  width: 11rem;
+}
