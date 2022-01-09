@@ -1,1 +1,1 @@
-Password-Toggel
+Password-Toggle
