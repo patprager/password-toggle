@@ -44,7 +44,7 @@ body {
   width: 25rem;
 }
 
-#hide-show {
+.toggle-button {
   margin-left: 0.35rem;
 
   height: 2rem;
@@ -56,7 +56,7 @@ body {
   color: var(--font-color);
 }
 
-#password-input {
+.password {
   border: var(--border-color) solid 0.1rem;
   border-radius: 0.2rem;
   height: 2rem;
