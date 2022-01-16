@@ -1,17 +1,13 @@
-function toggleButton() {
-  const pwButton = document.getElementById("hide-show").innerHTML;
-  const pwField = document.getElementById("password");
+const toggleButton = document.querySelector("#hide-show");
+toggleButton.addEventListener("click", function () {
+  const passwordInput = document.querySelector("#password-input");
+  const currentType = passwordInput.getAttribute("type");
 
-  if (pwButton === "Show Password") {
-    pwField.setAttribute("type", "text");
-    document.getElementById("hide-show").innerHTML = "Hide Password";
+  if (currentType === "password") {
+    passwordInput.setAttribute("type", "text");
+    toggleButton.innerHTML = "Hide Password";
   } else {
-    pwField.setAttribute("input", "text");
-    document.getElementById("hide-show").innerHTML = "Show Password";
+    passwordInput.setAttribute("type", "password");
+    toggleButton.innerHTML = "Show Password";
   }
-}
-
-window.addEventListener("load", function () {
-  const show = this.document.getElementById("hide-show");
-  show.addEventListener("click", toggleButton);
 });
